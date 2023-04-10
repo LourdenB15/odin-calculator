@@ -5,7 +5,7 @@ body {
 
 h1 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     margin: 10px 0;
 }
@@ -34,7 +34,24 @@ h1 {
     background-color: rgb(208, 208, 236);
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.603);
     display: grid;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 55px 82px;
+    overflow: hidden;
+}
+
+.input-value,
+.result {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.result {
+    font-size: 24px;
+    align-items: center;
+    font-weight: 560;
 }
 
 .btn-wrapper {

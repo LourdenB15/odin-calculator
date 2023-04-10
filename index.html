@@ -8,9 +8,11 @@
     <title>Calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -18,28 +20,30 @@
     <div class="wrapper">
         <div class="calculator">
             <div class="input-box">
+                <!-- 35 total digits-->
                 <div class="input-value"></div>
+                <!-- 23 total digits-->
                 <div class="result"></div>
             </div>
             <div class="btn-wrapper">
-                <div class="delete btn">Delete</div>
-                <div class="ac btn">AC</div>
-                <div class="divide btn">&divide;</div>
-                <div class="seven btn">7</div>
-                <div class="eight btn">8</div>
-                <div class="nine btn">9</div>
-                <div class="times btn">&times;</div>
-                <div class="four btn">4</div>
-                <div class="five btn">5</div>
-                <div class="six btn">6</div>
-                <div class="minus btn">&minus;</div>
-                <div class="one btn">1</div>
-                <div class="two btn">2</div>
-                <div class="three btn">3</div>
-                <div class="plus btn">&plus;</div>
-                <div class="zero btn">0</div>
-                <div class="period btn">&period;</div>
-                <div class="equals btn">&equals;</div>
+                <div class="delete btn extra">Delete</div>
+                <div class="ac btn extra">AC</div>
+                <div class="divide btn operations">&divide;</div>
+                <div class="seven btn digits">7</div>
+                <div class="eight btn digits">8</div>
+                <div class="nine btn digits">9</div>
+                <div class="times btn operations">&times;</div>
+                <div class="four btn digits">4</div>
+                <div class="five btn digits">5</div>
+                <div class="six btn digits">6</div>
+                <div class="minus btn operations">&minus;</div>
+                <div class="one btn digits">1</div>
+                <div class="two btn digits">2</div>
+                <div class="three btn digits">3</div>
+                <div class="plus btn operations">&plus;</div>
+                <div class="zero btn digits">0</div>
+                <div class="period btn extra">&period;</div>
+                <div class="equal btn operations">&equals;</div>
             </div>
         </div>
     </div>
