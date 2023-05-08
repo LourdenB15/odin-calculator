@@ -38,8 +38,8 @@ h1 {
     overflow: hidden;
 }
 
-.input-value,
-.result {
+#input,
+#result {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -48,7 +48,7 @@ h1 {
     margin-right: 20px;
 }
 
-.result {
+#result {
     font-size: 24px;
     align-items: center;
     font-weight: 560;
