@@ -89,8 +89,10 @@ function display() {
 equal.addEventListener('click', () => {
     answerChecker();
     assignOperator();
+    x = parseFloat(x);
+    y = parseFloat(y);
     operate(operator);
-    x = parseFloat(total);
+    x = total.toString();
     y = '';
     operator = '';
     result.textContent = total;
@@ -159,16 +161,16 @@ function answerChecker() {
 function operate(operator) {
     switch (operator) {
         case '+':
-            total = Math.round(add(x, y) * 100) / 100;
+            total = Math.round(add(x, y) * 1000) / 1000;
             break;
         case '-':
-            total = Math.round(substract(x, y) * 100) / 100;
+            total = Math.round(substract(x, y) * 1000) / 1000;
             break;
         case 'x':
-            total = Math.round(multiply(x, y) * 100) / 100;
+            total = Math.round(multiply(x, y) * 1000) / 1000;
             break;
         case '/':
-            total = Math.round(division(x, y) * 100) / 100;
+            total = Math.round(division(x, y) * 1000) / 1000;
             break;
         default:
             total = 'ERROR';
