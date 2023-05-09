@@ -148,7 +148,7 @@ function operationCalc(e) {
 
 function answerChecker() {
     let numVar;
-    if (Math.sign(result.textContent) === -1) {
+    if (Math.sign(result.textContent) === -1 && input.textContent.charAt(0) === '-') {
         numVar = input.textContent.split(checkOperator);
         numVar.shift();
         x = '-' + numVar[0];
